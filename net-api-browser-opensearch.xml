@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<OpenSearchDescription
+    xmlns="http://a9.com/-/spec/opensearch/1.1/"
+    xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>.NET API Browser</ShortName>
+  <Description>
+    .NET API Browser &#x2013; your one-stop shop for all .NET-based APIs from Microsoft.
+  </Description>
+  <Image height="128" width="128" type="image/png">https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/microsoft-header.png</Image>
+  <Image type="image/x-icon">https://docs.microsoft.com/favicon.ico</Image>
+  <!--
+    For each fully supported language there is a "dotnet-api-docs.$language"
+    repo (with the exception of en-us which has no suffix).  See:
+    https://github.com/dotnet?q=dotnet-api-docs
+  -->
+  <Language>cs-cz</Language>
+  <Language>de-de</Language>
+  <Language>en-us</Language>
+  <Language>es-es</Language>
+  <Language>fr-fr</Language>
+  <Language>it-it</Language>
+  <Language>ja-jp</Language>
+  <Language>ko-kr</Language>
+  <Language>pl-pl</Language>
+  <Language>pt-br</Language>
+  <Language>ru-ru</Language>
+  <Language>tr-tr</Language>
+  <Language>zh-cn</Language>
+  <Language>zh-tw</Language>
+  <!--
+    Some unsupported language codes have a small amount of translation (e.g.
+    the "All APIs" dropdown) with fallback to English for untranslated content
+    (e.g. la, hr, hr-hr, sr-cyrl-rs, sr-latn-rs).
+    Other unsupported languages cause 404 (e.g. sr, sr-rs, i-klingon, x-pirate).
+    Unsupported regions fall back to supported region (e.g. de-ch to de-de,
+    es-mx to es-es).
+    Language "*" may or may not be desirable, depending on browser behavior.
+  -->
+  <Language>*</Language>
+  <Url type="text/html"
+      template="https://docs.microsoft.com/{language}/dotnet/api/?term={searchTerms}" />
+  <Url type="application/opensearchdescription+xml"
+     rel="self"
+     template="https://kevinoid.github.io/net-api-browser-opensearch/net-api-browser-opensearch.xml" />
+  <moz:SearchForm>https://docs.microsoft.com/en-us/dotnet/api/</moz:SearchForm>
+</OpenSearchDescription>
